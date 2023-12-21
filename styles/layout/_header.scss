@@ -1,0 +1,17 @@
+.post-nav-banner {
+    height: 135px;
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .date {
+        margin: 0;
+        color: black;
+    }
+}
+.about nav {
+    margin-bottom: 20px;
+}
+.contact nav {
+    margin-bottom: 20px;
+}

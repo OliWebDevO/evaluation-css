@@ -1,0 +1,150 @@
+.top-news {
+
+    margin-top: 50px;
+}
+.button-social {
+   display:flex;
+   flex-direction: column;
+   margin: 30px 0 100px 0;
+
+}
+.social {
+    margin-top: 30px;
+    a {
+        padding: 10px;
+        &:hover {
+                color:#ff0303;
+        }
+    }
+    
+}
+.comments {
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    font-weight: 600;
+    
+    }
+.index h3 {
+    margin-bottom: 10px;
+} 
+.title-line {
+    margin-top: 80px;
+    h5 {
+        margin-bottom:24px ;
+    }
+    margin-bottom: 30px;
+}
+.img-relative {
+    position: relative;
+    margin-bottom: 30px;
+}
+.absolute-red {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    padding: 8px 60px;
+    background-color: #ff0303;
+    text-transform: uppercase;
+    color: white;
+    font-size: 13px;
+}
+.absolute-title {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 20px;
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: none;
+}
+.gray-box-absolute {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    height:31.5px;
+    width: 228px;
+    background-color: rgba(0, 0, 0, 0.454);
+}
+.dont-miss {
+    display: flex;
+
+    
+}
+.dont-miss-img {
+    img {
+        height: 75px;
+        margin-bottom: 40px;
+    }
+    padding-right:15px;
+}
+.dont-miss-text {
+    h6 {
+        font-weight: 500;
+        font-size: 14px;
+        margin: 5px;
+        cursor: pointer;
+        @include transition;
+        &:hover {
+            color: #ff0303;
+            @include transition;
+        }
+    }
+    .date {
+        font-weight: 500;
+        font-size: 14px;
+        margin: 10px 5px;
+    }
+}
+.small-line {
+    margin-top: 0px;
+}
+.environement {
+    h5 {
+        text-transform: none;
+        margin-bottom: 15px;
+    }
+}
+
+// .background-gray {
+//     background-color: #f6f6f6;
+//     width: 100%;
+// }
+.index-last {
+    h5 {
+        text-transform: none;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width:1200px) {
+    .grid-container {
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows: repeat(6,1fr);
+        gap:20px; 
+    }
+    .politics {
+        .grid-box:nth-of-type(1) {
+            grid-column: 1 /4;
+            grid-row: 1/2;
+        }
+        // .grid-box:nth-of-type(2) {
+            
+        //     grid-column: 4/5;
+        // }
+        .grid-box:nth-of-type(5) { 
+            grid-column: 4/5;
+            grid-row:1/2
+        }
+    }
+    .nav-burger {
+        display: none;
+    }
+}
