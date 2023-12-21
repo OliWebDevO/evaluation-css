@@ -6,3 +6,47 @@ html {
     width: 90vw;
     margin: 0 auto;
 }
+*a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    &:hover {
+        color: #ff0303;
+    }
+}
+.gray-line {
+    height: 2px;
+    background-color:#dedbdb ;
+    margin: 20px 0;
+}
+.red-title-bold {
+    padding: 5px 10px;
+    background-color: #ff0303;
+    margin-left: 0;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 400;
+}
+.date {
+   color: #838383; 
+   font-style: italic;
+}
+.img-hover-box {
+    overflow: hidden;
+        img {
+            transition: 1s all ease;
+            &:hover {
+                transform: scale(1.1); 
+                transition: 1s all ease;
+            }
+        }
+}
+

@@ -1,0 +1,39 @@
+nav {
+    margin-bottom: 100px;
+}
+.pre-nav-banner {
+    img:nth-of-type(1) {
+        width: 200px;
+        padding: 20px 0;
+    }
+}
+.nav-link {
+    font-weight: 500;
+    display: none;
+}
+.nav-burger {
+    display: flex;
+    width: 100px;
+    background-color: #ff0303; 
+    color: white;
+    padding:10px 100px 10px 30px;
+    margin-left: 5vw;
+    border-radius: 8px;
+}
+.nav-search {
+    display: none;
+}
+.lines {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 10px;
+    div {
+        width: 20px;
+        height: 3px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        background-color: white;
+        
+    }
+}
