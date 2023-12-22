@@ -1,7 +1,5 @@
-.grid-container .about {
-    display: grid;
-    grid-template-columns: 1fr;
-    
+.about .grid-container {
+    margin-bottom: 80px;
 }
 .about-box {
     img {
@@ -31,13 +29,15 @@
     h2 {
         z-index: 3;
         color: white;
+        margin-bottom: 5px;
+        font-size: 30px;
     }
     p {
         z-index: 3;
         color: #dedbdb;
-        padding: 5vw;
+        padding: 10px 20vw;
         text-align: center;
-        margin-top:10px;
+        margin-top:0;
         
     }
     .button {
@@ -65,4 +65,25 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.599);
     z-index: 2;
+}
+@media screen and (min-width:700px) {
+    .flex-history {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+    }
+}
+@media screen and (min-width:550px) {
+    .about .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+    }
+}
+@media screen and (min-width:900px) {
+    .join {
+       p{ max-width:750px;
+        padding: 10px 5vw;
+       }
+    }
 }

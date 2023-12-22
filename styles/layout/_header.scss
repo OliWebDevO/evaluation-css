@@ -1,17 +1,66 @@
+header {
+    margin-bottom: 100px;
+}
+.pre-nav-banner {
+    display: flex;
+    flex-direction: column;
+    img:nth-of-type(1) {
+        width: 200px;
+        padding: 20px 0;
+    }
+}
+
 .post-nav-banner {
     height: 135px;
     background-color: #efefef;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .date {
-        margin: 0;
-        color: black;
+    .post-nav-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .date {
+            margin: 0;
+            color: black;
+        }
     }
 }
+
 .about nav {
     margin-bottom: 20px;
 }
 .contact nav {
     margin-bottom: 20px;
+}
+// @media screen and (min-width:1100px) {
+//     .pre-nav-banner {
+//         img:nth-of-type(1) {
+//             width: 450px;
+//             padding: 20px 0;
+//         }
+//         img:nth-of-type(2) {
+//             width: 20vw;
+//             padding: 20px 0;
+//         }    
+//     }
+// }
+@media screen and (min-width:768px) {
+    .pre-nav-banner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        img:nth-of-type(1) {
+            width: 250px;
+            padding: 20px 40px 20px 0;
+        }
+        img:nth-of-type(2) {
+            width: 60vw;
+            padding: 20px 0;
+        }
+    }
+}
+@media screen and (min-width:900px) {
+    .pre-nav-banner {
+        img:nth-of-type(1) {
+            width: 30vw;
+        }
+    }
 }

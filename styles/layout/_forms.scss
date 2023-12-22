@@ -2,12 +2,16 @@ form {
     input {
         width:100%;    
     }
+    
     .input-text {
         padding: 15px;
         border: none;
         background-color: #f4f0f0;
         font-size: 15px;
         margin-bottom: 10px;
+    }
+    .textarea {
+        width: 100%;
     }
     .input-submit {
         padding: 15px;
@@ -16,6 +20,16 @@ form {
         font-size: 13px;
         text-transform: uppercase;
         color: white;
+        margin-bottom: 30px;
+    }
+    .input-submit-contact {
+        padding: 15px;
+        border: none;
+        background-color: #fff;
+        font-size: 13px;
+        border: 2px solid black;
+        text-transform: uppercase;
+        color: black;
         margin-bottom: 30px;
     }
 }
